@@ -1,0 +1,115 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-xl">South road: Plastic</span>
+      <h1 class="govuk-heading-xl">Check before you submit</h1>
+      <p class="govuk-body">Your summary log has been uploaded and validated. <br><br> Before submitting, you need to confirm that you’re aware of the following. </p>
+
+      <div class="govuk-!-padding-bottom-6"></div>
+
+      <h2 class="govuk-heading-l">Waste balance</h2>
+
+      <h3 class="govuk-heading-m">29 new loads will be added to your waste balance</h3>
+      <p class="govuk-body">These are loads that have been added since your summary log was last submitted. They include all the
+        information required in section 1 of your summary log.</p>
+
+        {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+
+        {{ govukAccordion({
+          id: "accordion-with-summary-sections",
+          showSectionText: 'Show loads',
+          items: [
+            {
+              heading: {
+                text: "9 loads will not be added to your waste balance"
+              },
+              summary: {
+                text: "  These loads are missing information from section 1 of your summary log. They will not be added to your 
+                waste balance until you provide the missing information."
+              },
+              content: {
+                html:
+                '<ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
+                  <li>12345678911</li>
+                  <li>12345678912</li>
+                  <li>12345678913</li>
+                  <li>12345678914</li>
+                  <li>12345678915</li>
+                  <li>12345678916</li>
+                  <li>12345678917</li>
+                  <li>12345678918</li>
+                  <li>12345678919</li>
+                </ul>'
+              }
+            },
+            {
+              heading: {
+                text: "5 loads in your current reporting period have been adjusted"
+              },
+              summary: {
+                text: " These loads include information in section 1 of your summary log that has been changed since the last 
+                time it was submitted. 
+                Your waste balance will be updated to reflect these adjustments."
+              },
+              content: {
+                html:
+                '<ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
+                  <li>12345678911</li>
+                  <li>12345678912</li>
+                  <li>12345678913</li>
+                  <li>12345678914</li>
+                  <li>12345678915</li>
+               
+                </ul>'
+              }
+            }
+          ]
+        }) }}
+
+<h2 class="govuk-heading-l">Compliance</h2>
+<h3 class="govuk-heading-m">Your summary log may be missing information required by your regulator</h3>
+<p class="govuk-body">One or more loads in your summary log may be incomplete, meaning you might not be meeting your 
+  regulatory requirements. <br><br>
+  
+  All the information across sections 1, 2, 3, 4 and 5 of your summary log is needed for each load, where applicable, to ensure you remain compliant. <br><br>
+  
+  You may not have all the required information yet. As soon as you’re able to provide it, you should 
+  submit an updated summary log.</p>
+
+  <div class="govuk-!-padding-bottom-6"></div>
+
+  <h2 class="govuk-heading-m">Declaration</h2>
+  <p class="govuk-body">By submitting this summary log you confirm that:</p>
+    <ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
+        <li>the packaging waste records you’re providing are correct, to the best of your knowledge</li>
+        <li>you will provide any missing information as soon as possible, to ensure that you’re meetingyour regulatory requirements</li>
+    </ul>
+
+    <div class="govuk-!-padding-bottom-2"></div>
+  
+    {% from "govuk/components/button/macro.njk" import govukButton %}
+
+    <div class="govuk-button-group">
+      {{ govukButton({
+        text: "Confirm and submit",
+        href: "/ingestion-reprocessor/submitted.html"
+      }) }}
+    
+      {{ govukButton({
+        text: "Re-upload summary log",
+        classes: "govuk-button--secondary",
+        href: "/ingestion-reprocessor/file-upload-1.html"
+      }) }}
+    </div>
+
+{% endblock %}

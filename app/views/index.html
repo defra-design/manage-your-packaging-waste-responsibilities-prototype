@@ -1,20 +1,67 @@
-{% extends "layouts/main.html" %}
+{% extends "layouts/main-1.html" %}
 
-{% set pageName="Home" %}
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
 
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
+      <span class="govuk-caption-xl">Prototypes</span>
+      <h1 class="govuk-heading-xl">Manage reprocessed and exported packaging waste</h1>  
+    </div> 
 
-    <h1 class="govuk-heading-xl">
-      {{ serviceName }}
-    </h1>
+    <div class="govuk-grid-column-two-thirds">
 
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+      <h1 class="govuk-heading-l">Summary log ingestion</h1>
+
+      <div class="dashboard-card-3">
+      
+      
+        <div class="card-title-3">
+          <strong class="govuk-tag">Ready for testing</strong>
+          <div class="govuk-!-padding-bottom-6"></div>
+          <h2 class="govuk-heading-m">Reprocessor</h2>
+          <p class="govuk-body-s">Submit your summary log to record packaging waste or <br>adjust previously submitted information.</p>
+        </div>
+        
+        <div class="task-list">
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link govuk-link--no-visited-state" href="/ingestion-reprocessor/service-start.html">Start prototype</a>
+          </li>
+        </ul>
+        </div>
+        
+        </div>
+
+        <div class="dashboard-card-3">
+      
+      
+          <div class="card-title-3">
+            <strong class="govuk-tag">Ready for testing</strong>
+            <div class="govuk-!-padding-bottom-6"></div>
+            <h2 class="govuk-heading-m">Exporter</h2>
+            <p class="govuk-body-s">Submit your summary log to record packaging waste or <br>adjust previously submitted information.</p>
+          </div>
+          
+          <div class="task-list">
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link govuk-link--no-visited-state" href="/ingestion-exporter/service-start.html">Start prototype</a>
+            </li>
+          </ul>
+          </div>
+          
+          </div>
+
+    </div>
   </div>
+  
 </div>
 
 {% endblock %}
+

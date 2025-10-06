@@ -4,3 +4,84 @@
 // 
 
 // Add extra styles here
+
+.govuk-caption-xl {
+    padding-bottom: 10px;
+}
+
+.dashboard-card {
+    border-style: solid;
+    border-color: #F3F2F1;
+    border-width: 1px;
+    margin-bottom: 30px;
+    height: 388px;
+}
+
+.dashboard-card-3 {
+    border-style: solid;
+    border-color: #F3F2F1;
+    border-width: 1px;
+    margin-bottom: 30px;
+    height: 264px;
+}
+
+.card-title {
+    padding: 20px 20px 10px 20px;
+    background-color: #F3F2F1;
+    height: 144px;
+
+}
+
+.dashboard-card-1 {
+    background-color: #1D70B8;
+}
+
+.card-title-1 {
+    padding-left: 40px;
+    padding-top: 40px;
+    text-decoration: #ffffff;
+    background-color: #1D70B8;
+    height: 110px;
+}
+
+.card-title-3 {
+    padding: 20px 20px 10px 20px;
+    background-color: #F3F2F1;
+    height: 160px;
+
+}
+
+.govuk-list {
+    padding: 15px 10px 20px 20px;
+    line-height: 40px;
+}
+
+.govuk-list-1 {
+    padding: 0px 0px 0px 0px;
+    line-height: 25px;
+}
+
+.govuk-list--bullet-1 {
+    line-height: 25px;
+}
+
+.govuk-table__cell{
+    max-width: fit-content;}
+
+
+.govuk-accordion {
+    margin-bottom: 50px;
+}
+
+.title {
+    padding-bottom: 0px;
+}
+
+.status {
+    float:right;
+}
+
+.number {
+    float:right;
+    text-align: right;
+}

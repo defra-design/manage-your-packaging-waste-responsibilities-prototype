@@ -1,0 +1,72 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Manage reprocessed and exported packaging waste
+      </h1>
+
+      <p>This service helps UK-based reprocessors and exporters meet <br> packaging waste regulations.</p>
+
+      <p>Use the service to manage your:</p>
+
+      <ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
+        <li>registrations</li>
+        <li>accreditations</li>
+        <li>summary log</li>
+        <li>regulator reports</li>
+        <li>PRNs or PERNs</li>
+      </ul>
+
+      {{ govukButton({
+        text: "Start now",
+        href: "/ingestion-reprocessor/login.html",
+        isStartButton: true
+      }) }}
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Quick links
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-list-1 govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Download a summary log
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Read guidance on packaging waste regulations
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+{% endblock %}
