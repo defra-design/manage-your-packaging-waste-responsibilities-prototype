@@ -1,0 +1,68 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Confirmation page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {{ govukPanel({
+        titleText: "PRN created",
+        html: "Status:<br><strong>Awaiting authorisation</strong>"
+      }) }}
+
+      <div class="govuk-!-padding-bottom-5"></div>
+
+      {{ govukButton({
+        text: "View PRN",
+        classes: "govuk-button--secondary"
+      }) }}
+
+      <div class="govuk-!-padding-bottom-2"></div>
+
+      <div>
+
+        <h2 class="govuk-heading-m">
+          What happens next
+        </h2>
+  
+        <p>
+          A PRN signatory from your company will need to sign in to this service to authorise and issue the PRN. <br><br> 
+  
+          If you are a PRN signatory you can authorise it yourself through your  <a href="#">PRNs page</a>  
+        </p>
+  
+        <p class="govuk-body">When the PRN is authorised:</p>
+        <ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
+          <li>it will be issued automatically</li>
+          <li>your available waste balance will be updated</li>
+        </ul>
+
+        {% from "govuk/components/button/macro.njk" import govukButton %}
+
+
+  
+  
+        <ul class="govuk-list govuk-list-spaced govuk-list-1">
+          <li>
+            <a class="govuk-link" href="#">Raise another PRN</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Manage PRNs</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="/create-prn/account-home.html">Return to home</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

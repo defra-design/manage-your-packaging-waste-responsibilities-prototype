@@ -1,0 +1,61 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Confirmation page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {{ govukPanel({
+        titleText: "Monthly report created and ready for authorisation"
+      }) }}
+
+      <div class="govuk-!-padding-bottom-5"></div>
+
+      {{ govukButton({
+        text: "View report",
+        classes: "govuk-button--secondary"
+      }) }}
+
+      <div class="govuk-!-padding-bottom-2"></div>
+
+      <div>
+
+        <h2 class="govuk-heading-m">
+          What happens next
+        </h2>
+  
+        <p>
+          An approved person from your company needs to authorise the report before it is sent to your regulator.<br><br> 
+
+          If you are an approved person you can authorise it yourself through your <a href="#">reports management page</a>.
+          
+          <br><br>The report will be submitted to your regulator automatically when it is authorised.
+        </p>
+
+
+        {% from "govuk/components/button/macro.njk" import govukButton %}
+
+
+  
+  
+        <ul class="govuk-list govuk-list-spaced govuk-list-1">
+          <li>
+            <a class="govuk-link" href="/create-monthly-report/manage-reports.html">Manage your monthly reports</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Return to home</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

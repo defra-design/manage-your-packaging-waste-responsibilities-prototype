@@ -1,0 +1,91 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-xl">Create PRN</span>
+      <h1 class="govuk-heading-xl">Who will this PRN be <br>issued to?</h1>
+
+      <form class="form" action="/path/of/next/page" method="post">
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper">
+            <label class="govuk-label govuk-label--l" for="country">
+              Pick a country
+            </label>
+          </h1>
+          <select class="govuk-select" id="country" name="country"
+            data-module="autocomplete" data-autoselect="" data-display-menu="" data-min-length="" data-show-all-values="" data-show-no-options-found="">
+            <option value="" selected disabled>Select an option</option>
+            <option value="Austria">Austria</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Croatia">Croatia</option>
+            <option value="Republic of Cyprus">Republic of Cyprus</option>
+            <option value="Czech Republic">Czech Republic</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Estonia">Estonia</option>
+            <option value="Finland">Finland</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Greece">Greece</option>
+            <option value="Hungary">Hungary</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Italy">Italy</option>
+            <option value="Latvia">Latvia</option>
+            <option value="Lithuania">Lithuania</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Malta">Malta</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Poland">Poland</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Romania">Romania</option>
+            <option value="Slovakia">Slovakia</option>
+            <option value="Slovenia">Slovenia</option>
+            <option value="Spain">Spain</option>
+            <option value="Sweden">Sweden</option>
+          </select>
+        </div>
+
+        <details class="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Can’t find the producer or compliance scheme?
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            PRNs can only be issued to packaging waste producers and compliance schemes who have registered with your regulator. <br><br>
+            If the buyer you're looking for is not appearing, check that:
+             
+            <ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
+              <li>you have spelled the name correctly</li>
+              <li>they are registered with your regulator</li>
+              </ul>
+
+          </div>
+        </details>
+
+        {{ govukButton({
+          text: "Continue",
+          href: "/create-prn/supporting-information.html"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

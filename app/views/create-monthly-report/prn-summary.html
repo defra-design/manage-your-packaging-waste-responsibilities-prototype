@@ -1,0 +1,49 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-xl">Create monthly report</span>
+      <h1 class="govuk-heading-xl">PRNs issued for plastic in September</h1>
+
+      <span class="govuk-caption-l">Total tonnage for PRNs issued</span>
+      <h1 class="govuk-heading-l">90,940</h1>
+
+      <div class="govuk-!-padding-bottom-2"></div>
+
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper">
+          <label class="govuk-label govuk-label--m" for="cost">
+            Enter total revenue of PRNs, excluding VAT
+          </label>
+        </h1>
+        <div class="govuk-input__wrapper">
+          <div class="govuk-input__prefix" aria-hidden="true">£</div>
+          <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+        </div>
+      </div>
+
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Confirm and continue",
+          href: "/create-monthly-report/average-price.html"
+        }) }}
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

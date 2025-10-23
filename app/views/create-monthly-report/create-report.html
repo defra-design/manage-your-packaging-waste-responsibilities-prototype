@@ -1,0 +1,47 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-xl">Create monthly report</span>
+      <h1 class="govuk-heading-xl">Your September 2025 report is ready to be created</h1>
+
+      <div class="govuk-inset-text">
+        The information you’ve entered has not yet been saved.
+      </div>
+
+      <h2 class="govuk-heading-m">Create your report</h2>
+
+      <p class="govuk-body">You’ve now confirmed all the information that will appear on your report.</p>
+      <p class="govuk-body">When you create the report it will be:</p>
+        <ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
+          <li>saved and ready to view</li>
+          <li>accessible through your reports management page</li>
+        </ul>
+
+        <p class="govuk-body">The report will need to be reviewed and authorised by an approved person at your company before it can be sent to your regulator.</p>
+
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Confirm and continue",
+          href: "/create-monthly-report/confirmation"
+        }) }}
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

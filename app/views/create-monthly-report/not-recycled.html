@@ -1,0 +1,42 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-xl">Create monthly report</span>
+      <h1 class="govuk-heading-xl">What is the total tonnage of plastic you received in September but did not recycle?</h1>
+
+      <div class="govuk-form-group">
+        <div id="account-number-hint" class="govuk-hint">
+          Only include plastic that is stored onsite, not waste that has been sent on.
+        </div>
+        <div class="govuk-input__wrapper">
+          <input class="govuk-input govuk-input--width-5" id="weight" name="weight" type="text" spellcheck="false">
+          <div class="govuk-input__suffix" aria-hidden="true">tonnes</div>
+        </div>
+      </div>
+
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Confirm and continue",
+          href: "/create-monthly-report/recycled.html"
+        }) }}
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,237 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Check your answers template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+
+      <span class="govuk-caption-xl">Manage PRNs</span>
+      <h1 class="govuk-heading-xl">
+        PRN details
+      </h1>
+
+      {{ govukSummaryList({
+        rows: [
+          {
+            key: {
+              text: "PRN number"
+            },
+            value: {
+              text: "090922"
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "",
+                  visuallyHiddenText: "Question 1"
+                }
+              ]
+            }
+          }
+          ,  
+          {
+            key: {
+              text: "Status"
+            },
+            status: {
+              tag: {
+                text: "Awaiting authorisation",
+                classes: "govuk-tag--blue"
+              }
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "",
+                  visuallyHiddenText: "Question 1"
+                }
+              ]
+            }
+          }
+          ,          {
+            key: {
+              text: "Issued by"
+            },
+            value: {
+              text: "Gaskells Waste Services"
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "",
+                  visuallyHiddenText: "Question 1"
+                }
+              ]
+            }
+          }
+          ,  {
+            key: {
+              text: "Packaging waste producer or compliance scheme"
+            },
+            value: {
+              text: "Nestle (SEPA)"
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "Question 1"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Tonnage"
+            },
+            value: {
+              text: "5 (five)"
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "Question 1"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Issuer comments"
+            },
+            value: {
+              text: ""
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "Question 2"
+                }
+              ]
+            }
+          }
+          ,
+          {
+            key: {
+              text: "Issued date"
+            },
+            value: {
+              text: ""
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "",
+                  visuallyHiddenText: "Question 3"
+                }
+              ]
+            }
+          }
+        ]
+      }) }}
+
+      <h1 class="govuk-heading-l">
+        Accreditation details
+      </h1>
+
+    {{ govukSummaryList({
+      rows: [
+        {
+          key: {
+            text: "Material"
+          },
+          value: {
+            text: "Plastic"
+          },
+          actions: {
+            items: [
+              {
+                href: "#",
+                text: "",
+                visuallyHiddenText: "Question 1"
+              }
+            ]
+          }
+        }
+        ,
+        {
+          key: {
+            text: "Accreditation number"
+          },
+          value: {
+            text: "493021"
+          },
+          actions: {
+            items: [
+              {
+                href: "#",
+                text: "",
+                visuallyHiddenText: "Question 2"
+              }
+            ]
+          }
+        }
+        ,
+        {
+          key: {
+            text: "Accreditation address"
+          },
+          value: {
+            text: "South Road, 
+            Liverpool,
+            L22 3DH"
+          },
+          actions: {
+            items: [
+              {
+                href: "#",
+                text: "",
+                visuallyHiddenText: "Question 3"
+              }
+            ]
+          }
+        }
+      ]
+    }) }}
+
+
+
+
+      {% from "govuk/components/button/macro.njk" import govukButton %}
+
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Create PRN",
+          href: "/create-prn/confirmation.html"
+        }) }}
+      
+        {{ govukButton({
+          text: "Cancel without saving",
+          href: "/create-prn/accreditation-dashboard",
+          classes: "govuk-button--secondary"
+        }) }}
+      </div>
+
+    </div>
+  </div>
+{% endblock %}

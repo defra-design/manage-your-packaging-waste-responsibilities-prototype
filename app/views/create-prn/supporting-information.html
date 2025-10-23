@@ -1,0 +1,42 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Check your answers template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-xl">Create PRN</span>
+      <h1 class="govuk-heading-xl">Add issuer notes (optional)</h1>
+
+      <form class="form" action="/path/of/next/page" method="post">
+
+        <div class="govuk-form-group">
+          <div id="more-detail-hint" class="govuk-hint">
+            Start typing the name of the packaging waste producer <br> or compliance scheme
+          </div>
+          <textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+
+        {{ govukButton({
+          text: "Continue",
+          href: "/create-prn/check-answers.html"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

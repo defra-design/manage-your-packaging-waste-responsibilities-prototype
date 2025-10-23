@@ -5,6 +5,8 @@
 
 // Add extra styles here
 
+
+
 .govuk-caption-xl {
     padding-bottom: 10px;
 }
@@ -84,4 +86,18 @@
 .number {
     float:right;
     text-align: right;
+}
+
+.govuk-button--secondary-1 {
+    float: right;
+}
+
+.govuk-tag--blue {
+    white-space: nowrap;
+    padding-right: 30px;
+}
+
+.govuk-tag--purple {
+    white-space: nowrap;
+    padding-right: 20px;
 }

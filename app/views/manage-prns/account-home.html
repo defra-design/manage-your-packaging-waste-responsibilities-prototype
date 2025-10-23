@@ -1,0 +1,108 @@
+{% extends "layouts/main.html" %}
+
+
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+  
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="govuk-!-padding-bottom-2"></div>
+<span class="govuk-caption-xl">Home</span>
+<h1 class="govuk-heading-xl">Doran Waste Services</h1>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+<div class="govuk-!-padding-bottom-2"></div>
+
+<h2 class="govuk-heading-l">Select site and material</h2>
+<div class="govuk-!-padding-bottom-4"></div>
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">South Road</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Material</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+      <th scope="col" class="govuk-table__header">Waste balance</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Paper and board</a>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--green">
+          Accredited
+        </strong>
+      </td>
+      <td class="govuk-table__cell">3.76 tonnes</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="/manage-prns/accreditation-dashboard.html" class="govuk-link govuk-link--no-visited-state">Plastic</a>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--green">
+          Accredited
+        </strong>
+      </td>
+      <td class="govuk-table__cell">10.30 tonnes</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Steel</a>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--grey">
+          Registered only
+        </strong>
+      </td>
+      <td class="govuk-table__cell"></td>
+    </tr>
+    
+</table>
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--m">St Johns Road</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Material</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+      <th scope="col" class="govuk-table__header">Waste balance</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Paper and board</a>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--green">
+          Accredited
+        </strong>
+      </td>
+      <td class="govuk-table__cell">113.90 tonnes</td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Plastic</a>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--grey">
+          Registered only
+        </strong>
+      </td>
+      <td class="govuk-table__cell"></td>
+    </tr>
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#" class="govuk-link govuk-link--no-visited-state">Steel</a>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--grey">
+          Registered only
+        </strong>
+      </td>
+      <td class="govuk-table__cell"></td>
+    </tr>
+    
+</table>
+
+{% endblock %}

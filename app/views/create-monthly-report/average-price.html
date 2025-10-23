@@ -1,0 +1,41 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-xl">Create monthly report</span>
+      <h1 class="govuk-heading-xl">Average price per tonne of PRNs issued in September</h1>
+
+      <p class="govuk-body">This calculation is based on the tonnage of PRNs issued divided by their <br>total revenue.</p>
+      <p class="govuk-body">Total tonnage: <strong>90,940</strong><br>
+        Total revenue, excluding VAT: <strong>£XXX.XX</strong> (<a href="#" class="govuk-link">change</a>)
+
+        <div class="govuk-!-padding-bottom-4"></div>
+
+      <span class="govuk-caption-l">Average price per tonne, excluding VAT </span>
+      <h1 class="govuk-heading-l">£323.32</h1>
+
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Confirm and continue",
+          href: "/create-monthly-report/supporting-information.html"
+        }) }}
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

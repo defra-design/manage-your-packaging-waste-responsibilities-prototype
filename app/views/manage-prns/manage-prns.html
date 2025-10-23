@@ -1,0 +1,233 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "/account-home.html"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">PRNs</h1>
+    <p class="govuk-body">You have <strong>2,000</strong> tonnes of your <strong>5,000</strong> tonnage band remaining</p>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    
+    
+    {% from "govuk/components/button/macro.njk" import govukButton %}
+
+    {{ govukButton({
+      text: "Create new PRN",
+      classes: "govuk-button--secondary govuk-button--secondary-1"
+    }) }}
+
+  </div>
+</div>
+
+<div class="govuk-!-padding-bottom-4"></div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="dashboard-card-1">
+    
+      <div class="card-title-1">
+        <h2 class="govuk-heading-l" style="color: white;" >10.30 tonnes
+        <span class="govuk-caption-m" style="color: white;">Available waste balance</span>
+        </h2>
+      </div>
+  
+ </div>
+  </div>
+</div>
+
+<div class="govuk-!-padding-bottom-8"></div>
+
+<div class="govuk-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+  <ul class="govuk-tabs__list">
+    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#past-day">
+        Awaiting authorisation
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-week">
+        Issued
+      </a>
+    </li>
+  </ul>
+  <div class="govuk-tabs__panel" id="past-day">
+    <h2 class="govuk-heading-l">Awaiting authorisation</h2>
+
+    <div class="govuk-inset-text">
+      If X then Y.
+    </div>
+
+
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Issued to</th>
+          <th scope="col" class="govuk-table__header">Date created</th>
+          <th scope="col" class="govuk-table__header">Tonnage</th>
+          <th scope="col" class="govuk-table__header">Status</th>
+          <th scope="col" class="govuk-table__header"></th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter">ComplyPak Ltd</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">19 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">15</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
+            Awaiting authorisation
+          </strong></td>
+          <td class="govuk-table__cell"><a href="#" class="govuk-link">Select</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Tesco</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">18 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">15</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
+            Awaiting authorisation
+          </strong></td>
+          <td class="govuk-table__cell"><a href="/manage-prns/prn-details.html" class="govuk-link">Select</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">15</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
+            Awaiting authorisation
+          </strong></td>
+          <td class="govuk-table__cell"><a href="#" class="govuk-link">Select</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+    <h2 class="govuk-heading-l">Issued</h2>
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">PRN</th>
+          <th scope="col" class="govuk-table__header">Issued to</th>
+          <th scope="col" class="govuk-table__header">Date issued</th>
+          <th scope="col" class="govuk-table__header">Status</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090922</a></td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
+            Awaiting acceptance
+          </strong></td>
+        </tr>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090923</a></td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
+            Awaiting acceptance
+          </strong></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090924</a></td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
+            Awaiting acceptance
+          </strong></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090925</a></td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
+            Awaiting acceptance
+          </strong></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090926</a></td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
+            Awaiting acceptance
+          </strong></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090927</a></td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
+            Awaiting acceptance
+          </strong></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090928</a></td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
+            Awaiting acceptance
+          </strong></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090929</a></td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
+            Awaiting acceptance
+          </strong></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090930</a></td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
+            Awaiting acceptance
+          </strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    {% from "govuk/components/pagination/macro.njk" import govukPagination %}
+
+{{ govukPagination({
+  next: {
+    href: "#"
+  },
+  items: [
+    {
+      number: 1,
+      current: true,
+      href: "#"
+    },
+    {
+      number: 2,
+      href: "#"
+    },
+    {
+      number: 3,
+      href: "#"
+    }
+  ]
+}) }}
+
+  </div>
+</div>
+
+
+{% endblock %}
