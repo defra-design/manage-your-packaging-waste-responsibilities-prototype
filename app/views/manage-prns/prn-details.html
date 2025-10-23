@@ -21,134 +21,125 @@
         PRN details
       </h1>
 
-      {{ govukSummaryList({
-        rows: [
-          {
-            key: {
-              text: "PRN number"
-            },
-            value: {
-              text: "090922"
-            },
-            actions: {
-              items: [
-                {
-                  href: "#",
-                  text: "",
-                  visuallyHiddenText: "Question 1"
-                }
-              ]
-            }
-          }
-          ,  
-          {
-            key: {
-              text: "Status"
-            },
-            status: {
-              tag: {
-                text: "Awaiting authorisation",
-                classes: "govuk-tag--blue"
-              }
-            },
-            actions: {
-              items: [
-                {
-                  href: "#",
-                  text: "",
-                  visuallyHiddenText: "Question 1"
-                }
-              ]
-            }
-          }
-          ,          {
-            key: {
-              text: "Issued by"
-            },
-            value: {
-              text: "Gaskells Waste Services"
-            },
-            actions: {
-              items: [
-                {
-                  href: "#",
-                  text: "",
-                  visuallyHiddenText: "Question 1"
-                }
-              ]
-            }
-          }
-          ,  {
-            key: {
-              text: "Packaging waste producer or compliance scheme"
-            },
-            value: {
-              text: "Nestle (SEPA)"
-            },
-            actions: {
-              items: [
-                {
-                  href: "#",
-                  text: "Change",
-                  visuallyHiddenText: "Question 1"
-                }
-              ]
-            }
-          },
-          {
-            key: {
-              text: "Tonnage"
-            },
-            value: {
-              text: "5 (five)"
-            },
-            actions: {
-              items: [
-                {
-                  href: "#",
-                  text: "Change",
-                  visuallyHiddenText: "Question 1"
-                }
-              ]
-            }
-          },
-          {
-            key: {
-              text: "Issuer comments"
-            },
-            value: {
-              text: ""
-            },
-            actions: {
-              items: [
-                {
-                  href: "#",
-                  text: "Change",
-                  visuallyHiddenText: "Question 2"
-                }
-              ]
-            }
-          }
-          ,
-          {
-            key: {
-              text: "Issued date"
-            },
-            value: {
-              text: ""
-            },
-            actions: {
-              items: [
-                {
-                  href: "#",
-                  text: "",
-                  visuallyHiddenText: "Question 3"
-                }
-              ]
-            }
-          }
-        ]
-      }) }}
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            PRN number
+          </dt>
+          <dd class="govuk-summary-list__value">
+            9839302
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"><span class="govuk-visually-hidden"> name</span></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Status
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <strong class="govuk-tag govuk-tag--blue">
+              Awaiting authorisation
+            </strong>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"><span class="govuk-visually-hidden"></span></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Issued by
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Gaskells Waste Services
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Packaging waste producer or compliance scheme
+          </dt>
+          <dd class="govuk-summary-list__value">
+            MCG Developments
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">Change</a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Tonnage
+          </dt>
+          <dd class="govuk-summary-list__value">
+            5
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">Change</a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Tonnage in words
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Five
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Issuer comments
+          </dt>
+          <dd class="govuk-summary-list__value">
+            
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">Change</a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Issued date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Authorised by
+          </dt>
+          <dd class="govuk-summary-list__value">
+            
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Position
+          </dt>
+          <dd class="govuk-summary-list__value">
+            
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"></a>
+          </dd>
+        </div>
+      </dl>
+
+
+
+
+      <div class="govuk-!-padding-bottom-6"></div>
 
       <h1 class="govuk-heading-l">
         Accreditation details
@@ -221,14 +212,14 @@
 
       <div class="govuk-button-group">
         {{ govukButton({
-          text: "Create PRN",
-          href: "/create-prn/confirmation.html"
+          text: "Authorise and issue PRN",
+          href: "/manage-prns/confirmation.html"
         }) }}
       
         {{ govukButton({
-          text: "Cancel without saving",
-          href: "/create-prn/accreditation-dashboard",
-          classes: "govuk-button--secondary"
+          text: "Cancel PRN",
+          href: "#",
+          classes: "govuk-button--warning"
         }) }}
       </div>
 

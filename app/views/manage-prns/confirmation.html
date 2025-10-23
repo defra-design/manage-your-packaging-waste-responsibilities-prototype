@@ -1,0 +1,52 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Confirmation page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {{ govukPanel({
+        titleText: "PRN issued to
+        MCG Developments",
+        html: "PRN number:<br><strong>090922</strong>"
+      }) }}
+
+      <div class="govuk-!-padding-bottom-5"></div>
+
+      <p>
+        Your waste balance has been updated. 
+      </p>
+
+
+      {{ govukButton({
+        text: "View PRN",
+        classes: "govuk-button--secondary"
+      }) }}
+
+      <div class="govuk-!-padding-bottom-2"></div>
+  
+     
+        <ul class="govuk-list govuk-list-spaced govuk-list-1">
+          <li>
+            <a class="govuk-link" href="#">Create another PRN</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="/manage-prns/manage-prns.html">Manage PRNs</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="/manage-prns/account-home.html">Return to home</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

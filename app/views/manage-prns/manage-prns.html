@@ -35,18 +35,42 @@
 <div class="govuk-!-padding-bottom-4"></div>
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-    <div class="dashboard-card-1">
+  <div class="govuk-grid-column-one-half">
+    <div class="dashboard-card-2">
     
-      <div class="card-title-1">
-        <h2 class="govuk-heading-l" style="color: white;" >10.30 tonnes
-        <span class="govuk-caption-m" style="color: white;">Available waste balance</span>
-        </h2>
+    
+      <div class="card-title-2">
+        <h2 class="govuk-heading-xl" style="color: #1D70B8;" >10.30
+          <p class="govuk-body-m" style="color: #1D70B8";><strong>Available waste balance (in tonnes)</strong></p>
+          </h2>
       </div>
-  
- </div>
+      
+      <div class="task-list-2">
+          <p class="govuk-body">Balance you can use to issue PRNs</p>
+      </div>
+      
+      </div>
+  </div>
+  <div class="govuk-grid-column-one-half">
+        <div class="dashboard-card-2">
+    
+        <div class="card-title-2">
+          <h2 class="govuk-heading-xl" style="color: #1D70B8;" >55.30
+            <p class="govuk-body-m" style="color: #1D70B8";><strong>Total waste balance (in tonnes)</strong></p>
+            </h2>
+        </div>
+    
+        <div class="task-list-2">
+          <p class="govuk-body">Balance including PRNs awaiting authorisation</p>
+        </div>
+    
+   </div>
   </div>
 </div>
+
+<div class="govuk-!-padding-bottom-8"></div>
+
+
 
 <div class="govuk-!-padding-bottom-8"></div>
 
@@ -57,7 +81,7 @@
   <ul class="govuk-tabs__list">
     <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
       <a class="govuk-tabs__tab" href="#past-day">
-        Awaiting authorisation
+        Awaiting action
       </a>
     </li>
     <li class="govuk-tabs__list-item">
@@ -70,7 +94,7 @@
     <h2 class="govuk-heading-l">Awaiting authorisation</h2>
 
     <div class="govuk-inset-text">
-      If X then Y.
+      PRNs awaiting authorisation: <strong>45 tonnes</strong>
     </div>
 
 
@@ -79,34 +103,30 @@
         <tr class="govuk-table__row">
           <th scope="col" class="govuk-table__header">Issued to</th>
           <th scope="col" class="govuk-table__header">Date created</th>
-          <th scope="col" class="govuk-table__header">Tonnage</th>
           <th scope="col" class="govuk-table__header">Status</th>
           <th scope="col" class="govuk-table__header"></th>
         </tr>
       </thead>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell govuk-!-width-one-quarter">ComplyPak Ltd</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Endoscopic Systems</td>
           <td class="govuk-table__cell govuk-!-width-one-quarter">19 September</td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">15</td>
           <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
             Awaiting authorisation
           </strong></td>
           <td class="govuk-table__cell"><a href="#" class="govuk-link">Select</a></td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell govuk-!-width-one-quarter">Tesco</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">MCG Developments</td>
           <td class="govuk-table__cell govuk-!-width-one-quarter">18 September</td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">15</td>
           <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
             Awaiting authorisation
           </strong></td>
           <td class="govuk-table__cell"><a href="/manage-prns/prn-details.html" class="govuk-link">Select</a></td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Calcast</td>
           <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">15</td>
           <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">
             Awaiting authorisation
           </strong></td>
@@ -114,6 +134,44 @@
         </tr>
       </tbody>
     </table>
+
+    <h2 class="govuk-heading-l">Awaiting cancellation</h2>
+
+    <div class="govuk-inset-text">
+      PRNs awaiting cancellation: <strong>12 tonnes</strong>
+    </div>
+
+
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Issued to</th>
+          <th scope="col" class="govuk-table__header">Date created</th>
+          <th scope="col" class="govuk-table__header">Status</th>
+          <th scope="col" class="govuk-table__header"></th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter">TFR Facilities</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">13 August</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--orange">
+            Awaiting cancellation
+          </strong></td>
+          <td class="govuk-table__cell"><a href="#" class="govuk-link">Select</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Linton Construction</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">7 August</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--orange">
+            Awaiting cancellation
+          </strong></td>
+          <td class="govuk-table__cell"><a href="#" class="govuk-link">Select</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+
   </div>
   <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
     <h2 class="govuk-heading-l">Issued</h2>
@@ -129,8 +187,8 @@
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090922</a></td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Radar Design</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">30 September</td>
           <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
             Awaiting acceptance
           </strong></td>
@@ -138,39 +196,39 @@
         </tr>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090923</a></td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Jokata</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">30 September</td>
           <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
             Awaiting acceptance
           </strong></td>
         </tr>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090924</a></td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Isonic Solutions</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">27 September</td>
           <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
             Awaiting acceptance
           </strong></td>
         </tr>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090925</a></td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Renewable Products</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">24 September</td>
           <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
             Awaiting acceptance
           </strong></td>
         </tr>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090926</a></td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">TTS N. Ireland</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">23 September</td>
           <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
             Awaiting acceptance
           </strong></td>
         </tr>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090927</a></td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Logan Enterprises</td>
           <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
           <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
             Awaiting acceptance
@@ -178,24 +236,24 @@
         </tr>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090928</a></td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Blue Sky Renewables</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">11 September</td>
           <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
             Awaiting acceptance
           </strong></td>
         </tr>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090929</a></td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Thirty30</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">11 September</td>
           <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
             Awaiting acceptance
           </strong></td>
         </tr>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell govuk-!-width-one-quarter"><a href="#" class="govuk-link">090930</a></td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">Ikea</td>
-          <td class="govuk-table__cell govuk-!-width-one-quarter">14 September</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">Solair Energy</td>
+          <td class="govuk-table__cell govuk-!-width-one-quarter">9 September</td>
           <td class="govuk-table__cell govuk-!-width-one-half"><strong class="govuk-tag govuk-tag--purple">
             Awaiting acceptance
           </strong></td>
