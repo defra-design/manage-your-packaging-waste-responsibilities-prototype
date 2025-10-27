@@ -1,0 +1,37 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Confirmation page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {{ govukPanel({
+        titleText: "Monthly report submitted"
+      }) }}
+
+      <p>
+        You can access the report through your <a href="#" class="govuk-link">reports page</a>.
+      </p>
+
+      <div class="govuk-inset-text">
+        If the information you’ve submitted is adjusted in the future, you’ll need to submit an updated report for this period. 
+      </div>
+
+      <ul class="govuk-list govuk-list-spaced govuk-list-1">
+        <li>
+          <a class="govuk-link" href="/create-monthly-report/manage-reports.html">Manage your monthly reports</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="#">Return to home</a>
+        </li>
+      </ul>
+
+
+    </div>
+  </div>
+
+{% endblock %}
