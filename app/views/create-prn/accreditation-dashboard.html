@@ -1,13 +1,13 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+  Check your answers template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block beforeContent %}
   {{ govukBackLink({
     text: "Back",
-    href: "/account-home.html"
+    href: "javascript:window.history.back()"
   }) }}
 {% endblock %}
 
@@ -18,47 +18,53 @@
     <span class="govuk-caption-xl">South road</span>
     <h1 class="govuk-heading-xl">Plastic</h1>
   </div>
+</div>
 
-  <div class="govuk-grid-column-one-third">
-    
-    <ul class="govuk-list" class="govuk-list">
-      <li>
-        <div><h3 class="govuk-heading-s"> Registration <div class="status"><strong class="govuk-tag govuk-tag--green">
-          Active
-        </strong></div></h3></div>
-      </li>
-      <li>
-        <div><h3 class="govuk-heading-s"> Accreditation <div class="status"><strong class="govuk-tag govuk-tag--green">
-          Active
-        </strong></div></h3></div>
-      </li>
-      <li>
-        <div><h3 class="govuk-heading-s"> Accreditation no. <div class="number" class="govuk-body"><p>493021
-        </p></div></h3></div>
-      </li>  
-    </ul>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <p class="govuk-body-m"><strong>Registration:</strong> <strong class="govuk-tag govuk-tag--green">Active</strong></p>
+    <p class="govuk-body-m"><strong>Registration no:</strong> A27WX2357214308-GL</p>
+  </div>
+  <div class="govuk-grid-column-one-half">
+    <p class="govuk-body-m"><strong>Accreditation:</strong> <strong class="govuk-tag govuk-tag--green">Active</strong></p>
+    <p class="govuk-body-m"><strong>Accreditation no:</strong> ER992415095748M
+</p>
   </div>
 </div>
 
-<hr class="govuk-section-break govuk-section-break--visible">
-
-<div class="govuk-!-padding-bottom-4"></div>
+<div class="govuk-!-padding-bottom-6"></div>
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-    <div class="dashboard-card-1">
+    <div class="dashboard-card-2">
     
-      <div class="card-title-1">
-        <h2 class="govuk-heading-l" style="color: white;" >10.30 tonnes
-        <span class="govuk-caption-m" style="color: white;">Available waste balance</span>
-        </h2>
-      </div>
+        <div class="card-title-2">
+          <h2 class="govuk-heading-xl" style="color: #1D70B8;" >10.30 tonnes
+            <p class="govuk-body-m" style="color: #1D70B8";><strong>Available waste balance</strong></p>
+            </h2>
+        </div>
+    
+        <div class="task-list-2">
+          <p class="govuk-body">Balance you can use to issue PRNs</p>
+        </div>
+    
+   </div>
+  </div>
   
  </div>
+
+<div class="govuk-!-padding-bottom-9"></div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l">Title goes here</h2>
   </div>
 </div>
 
-<div class="govuk-!-padding-bottom-8"></div>
+
+<hr class="govuk-section-break govuk-section-break--visible">
+
+<div class="govuk-!-padding-bottom-7"></div>
 
 
 <div class="govuk-grid-row">
@@ -74,7 +80,7 @@
       <div class="task-list">
       <ul class="govuk-list">
         <li>
-          <a class="govuk-link govuk-link--no-visited-state" href="/ingestion-reprocessor/file-upload-1.html">Submit your summary log</a>
+          <a class="govuk-link govuk-link--no-visited-state" href="#">Submit your summary log</a>
         </li>
         <li>
           <a class="govuk-link govuk-link--no-visited-state" href="#">View summary log history</a>
@@ -95,7 +101,7 @@
         <div class="task-list">
           <ul class="govuk-list">
             <li><a class="govuk-link govuk-link--no-visited-state" href="/create-prn/tonnage.html">Create new PRN</a></li>
-            <li><a class="govuk-link govuk-link--no-visited-state" href="#">Manage PRNs</a></li>
+            <li><a class="govuk-link govuk-link--no-visited-state" href="/manage-prns/manage-prns.html">Manage PRNs</a></li>
           </ul>
         </div>
     
