@@ -5,37 +5,35 @@
 
 // Add extra styles here
 
-
-
 .govuk-caption-xl {
     padding-bottom: 10px;
 }
 
 .dashboard-card {
     border-style: solid;
-    border-color: #F3F2F1;
+    border-color: #E5E6E7;
     border-width: 1px;
     margin-bottom: 30px;
     height: 388px;
 }
 
 .dashboard-card-2{
-    background-color: #F8F8F8;
+    background-color: #E5E6E7;
     margin-bottom: 30px;
-    height: 80px;
+    height: 96px;
     margin-bottom: 95px;
 }
 
 .card-title-2 {
     padding: 20px 30px 10px 30px;
-    background-color: #DEE0E2;
+    background-color: #E5E6E7;
     height: 95px;
 
 }
 
 .task-list-2 {
     padding: 20px 20px 10px 20px;
-    background-color: #F8F8F8;
+    background-color: #F3F2F1;
     height: 40px;
 }
 
@@ -49,7 +47,7 @@
 
 .card-title {
     padding: 20px 20px 10px 20px;
-    background-color: #F3F2F1;
+    background-color: #E5E6E7;
     height: 144px;
 
 }
@@ -112,14 +110,25 @@
     float: right;
 }
 
+.govuk-table__header-1 {
+    width: 360px;
+}
+
+
 .govuk-tag--blue {
     white-space: nowrap;
     padding-right: 30px;
 }
 
+
 .govuk-tag--orange {
     white-space: nowrap;
     padding-right: 22px;
+}
+
+.govuk-tag--orange-1 {
+    white-space: nowrap;
+    padding-right: 10px;
 }
 
 .govuk-tag--purple {
