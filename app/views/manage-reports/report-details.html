@@ -1,0 +1,255 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Report details</h1>
+
+      <p class="govuk-body">Check that the following information is correct before submitting this report to your regulator.</p>
+  
+  </div>
+
+  </div>
+
+  <div class="govuk-!-padding-bottom-8"></div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <table class="govuk-table">
+        <h2 class="govuk-heading-l">Waste received</h2>
+
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total tonnage received</th>
+            <td class="govuk-table__cell govuk-!-width-one-half">109,912.47</td>
+          </tr>
+        </tbody>
+      </table>
+  
+  </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Supplier details</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Supplier</th>
+            <th scope="col" class="govuk-table__header">Role</th>
+            <th scope="col" class="govuk-table__header">Address</th>
+            <th scope="col" class="govuk-table__header">Phone</th>
+            <th scope="col" class="govuk-table__header">Email</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Gaskells Waste <br>Services</td>
+            <td class="govuk-table__cell">MRF</td>
+            <td class="govuk-table__cell">17 Foster St,<br>L20 8EX</td>
+            <td class="govuk-table__cell">0345 340 9656</td>
+            <td class="govuk-table__cell">enquiries@gaskell<br>swaste.co.uk</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Planet Recycling</td>
+            <td class="govuk-table__cell">Sorter</td>
+            <td class="govuk-table__cell">12 Juniper St,<br> L20 8EL</td>
+            <td class="govuk-table__cell">0151 922 6668</td>
+            <td class="govuk-table__cell">info@planetrecycl<br>ing.co.uk</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Veolia Merseyside <br>& Halton</td>
+            <td class="govuk-table__cell">Baler</td>
+            <td class="govuk-table__cell">Bidston Recycling <br>Centre, CH41 1EB</td>
+            <td class="govuk-table__cell">0203 567 4200</td>
+            <td class="govuk-table__cell">enquiries@veolia.<br>co.uk</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">SUEZ recycling and<br> recovery UK</td>
+            <td class="govuk-table__cell">Sorter</td>
+            <td class="govuk-table__cell">Knowsley Industrial<br> Estate, L33 7UZ</td>
+            <td class="govuk-table__cell">00800 542 3549</td>
+            <td class="govuk-table__cell">customerservicesn<br>orth.uk@suez.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="govuk-!-padding-bottom-8"></div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <table class="govuk-table">
+        <h2 class="govuk-heading-l">Recycling activity</h2>
+
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header ">Total tonnage of plastic you received in September <br> but did not recycle</th>
+            <td class="govuk-table__cell govuk-!-width-one-half">12,940</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header ">Total tonnage of plastic you recycled in September</th>
+            <td class="govuk-table__cell govuk-!-width-one-half">139,982</td>
+          </tr>
+        </tbody>
+        </tbody>
+      </table>
+  
+  </div>
+
+  </div>
+
+  <div class="govuk-!-padding-bottom-8"></div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <table class="govuk-table">
+        <h2 class="govuk-heading-l">Waste sent on</h2>
+
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total sent on to a reprocessor</th>
+            <td class="govuk-table__cell govuk-!-width-one-half">230.09</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total sent on to a exporter</th>
+            <td class="govuk-table__cell govuk-!-width-one-half">0</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total sent on to other site <br> or other facility</th>
+            <td class="govuk-table__cell govuk-!-width-one-half">119.34</td>
+          </tr>
+        </tbody>
+      </table>
+  
+  </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Final destination of waste sent on</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Supplier</th>
+            <th scope="col" class="govuk-table__header">Role</th>
+            <th scope="col" class="govuk-table__header">Address</th>
+            <th scope="col" class="govuk-table__header">Phone</th>
+            <th scope="col" class="govuk-table__header">Email</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Gaskells Waste <br>Services</td>
+            <td class="govuk-table__cell">MRF</td>
+            <td class="govuk-table__cell">17 Foster St,<br>L20 8EX</td>
+            <td class="govuk-table__cell">0345 340 9656</td>
+            <td class="govuk-table__cell">enquiries@gaskell<br>swaste.co.uk</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Planet Recycling</td>
+            <td class="govuk-table__cell">Sorter</td>
+            <td class="govuk-table__cell">12 Juniper St,<br> L20 8EL</td>
+            <td class="govuk-table__cell">0151 922 6668</td>
+            <td class="govuk-table__cell">info@planetrecycl<br>ing.co.uk</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Veolia Merseyside <br>& Halton</td>
+            <td class="govuk-table__cell">Baler</td>
+            <td class="govuk-table__cell">Bidston Recycling <br>Centre, CH41 1EB</td>
+            <td class="govuk-table__cell">0203 567 4200</td>
+            <td class="govuk-table__cell">enquiries@veolia.<br>co.uk</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">SUEZ recycling and<br> recovery UK</td>
+            <td class="govuk-table__cell">Sorter</td>
+            <td class="govuk-table__cell">Knowsley Industrial<br> Estate, L33 7UZ</td>
+            <td class="govuk-table__cell">00800 542 3549</td>
+            <td class="govuk-table__cell">customerservicesn<br>orth.uk@suez.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="govuk-!-padding-bottom-8"></div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <table class="govuk-table">
+        <h2 class="govuk-heading-l">PRN activity</h2>
+
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total tonnage for PRNs issued</th>
+            <td class="govuk-table__cell govuk-!-width-one-half">90,940</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Total revenue of PRNs</th>
+            <td class="govuk-table__cell govuk-!-width-one-half">£1000.00</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Average price per tonne</th>
+            <td class="govuk-table__cell govuk-!-width-one-half">£323.32</td>
+          </tr>
+        </tbody>
+      </table>
+  
+  </div>
+
+  </div>
+
+  <div class="govuk-!-padding-bottom-8"></div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">Declaration</h1>
+
+      <p class="govuk-body">By submitting this report you confirm that the information you’re providing is correct, to the best of your knowledge.</p>
+
+      <div class="govuk-!-padding-bottom-4"></div>
+
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Confirm and submit report",
+          href: "/manage-reports/report-confirmation.html"
+        }) }}
+      
+        {{ govukButton({
+          text: "Reject and delete",
+          href: "#",
+          classes: "govuk-button--warning"
+        }) }}
+      </div>
+  
+  </div>
+
+  </div>
+
+
+
+
+
+{% endblock %}
