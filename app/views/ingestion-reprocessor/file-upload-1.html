@@ -16,66 +16,15 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <span class="govuk-caption-xl">South road: Plastic</span>
-      <h1 class="govuk-heading-xl">Upload your summary log</h1>
-      <p class="govuk-body">Check you’ve completed the following steps before uploading your summary log. This will 
-        ensure that your waste balance is correct and you’re meeting regulatory requirements.</p>
+      <span class="govuk-caption-xl">Submit summary log</span>
+      <h1 class="govuk-heading-xl">Upload file</h1>
+      <p class="govuk-body">You can upload the latest version of your summary log whenever you 
+        <br> need to add or adjust waste records.</p>
 
-        <div class="govuk-!-padding-bottom-6"></div>
+        <div class="govuk-!-padding-bottom-3"></div>
 
         {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
 
-        {{ govukAccordion({
-          id: "accordion-default",
-          showSectionText: 'Why this is needed',
-          items: [
-            {
-              heading: {
-                text: "You’ve completed section 1 for each load"
-              },
-              content: {
-                html: '<p class="govuk-body">A load will only be added to your waste balance when you’ve provided all the information in this section.</p>'
-              }
-            },
-            {
-              heading: {
-                text: "You’ve included all known information in sections 2, 3 and 4"
-              },
-              content: {
-                html: '  <p class="govuk-body">By completing these sections you’re ensuring that:</p>
-        
-                <ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
-                  <li>you’re meeting your regulatory requirements</li>
-                  <li>reports you submit to your regulator will be accurate</li>
-                </ul>'
-              }
-            },
-            {
-              heading: {
-                text: "You’ve adjusted any out-of-date information"
-              },
-              content: {
-                html: '<p class="govuk-body">You should always submit the most up-to-date information you have, to ensure that your waste balance is accurate. <br><br>
-        
-                  Any adjustments for this reporting period will be reflected straight away in your waste balance. <br><br> Any adjustments made to loads from previous reporting periods will need to be confirmed by an approved person at your company.</p>'
-              }
-            },
-            {
-              heading: {
-                text: "You’ve included any waste sent on in section 5, if applicable"
-              },
-              content: {
-                html: '<p class="govuk-body">You only need to complete this section if packaging waste has been sent on. <br><br>These loads 
-                  will be removed from your waste balance when all the information is provided.</p>'
-              }
-            }
-          ]
-        }) }}
-        
-             <div class="govuk-inset-text">
-                  You can submit an updated summary log whenever you need to add or adjust your waste records.
-                  </div>
-        
         
         
         

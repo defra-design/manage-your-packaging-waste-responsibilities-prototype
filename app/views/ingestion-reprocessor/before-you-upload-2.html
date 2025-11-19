@@ -17,7 +17,7 @@
 
       <div class="govuk-!-padding-bottom-6"></div>
 
-      <h2 class="govuk-heading-l">9 new loads have been added</h2>
+      <h2 class="govuk-heading-l">2 new loads have been added</h2>
 
         {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
 
@@ -27,7 +27,7 @@
           items: [
             {
               heading: {
-                text: "7 new loads will be added to your waste balance "
+                text: "2 new loads will be added to your waste balance "
               },
               summary: {
                 text: "These loads include all the information required in section 1 of your  summary log."
@@ -37,74 +37,12 @@
                 '<ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
                   <li>12345678911</li>
                   <li>12345678912</li>
-                  <li>12345678913</li>
-                  <li>12345678914</li>
-                  <li>12345678915</li>
-                  <li>12345678916</li>
-                  <li>12345678917</li>
-                </ul>'
-              }
-            },
-            {
-              heading: {
-                text: "2 new loads will not be added to your waste balance"
-              },
-              summary: {
-                text: "These loads are missing information from section 1 of your summary log. They will not be added to your 
-                waste balance until you provide the missing information."
-              },
-              content: {
-                html:
-                '<ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
-                  <li>12345678911</li>
-                  <li>12345678912</li>
-
                 </ul>'
               }
             }
           ]
         }) }}
 
-
-  
-
-<h2 class="govuk-heading-l">14 existing loads have been adjusted</h2>
-
-{% from "govuk/components/accordion/macro.njk" import govukAccordion %}
-
-{{ govukAccordion({
-  id: "accordion-with-summary-sections",
-  showSectionText: 'Show loads',
-  items: [
-    {
-      heading: {
-        text: "14 adjustments will be reflected in your waste balance "
-      },
-      summary: {
-        text: "These loads include all the information required in section 1 of your  summary log."
-      },
-      content: {
-        html:
-        '<ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
-          <li>12345678911</li>
-          <li>12345678912</li>
-          <li>12345678913</li>
-          <li>12345678914</li>
-          <li>12345678915</li>
-          <li>12345678916</li>
-          <li>12345678917</li>
-          <li>12345678911</li>
-          <li>12345678912</li>
-          <li>12345678913</li>
-          <li>12345678914</li>
-          <li>12345678915</li>
-          <li>12345678916</li>
-          <li>12345678917</li>
-        </ul>'
-      }
-    }
-  ]
-}) }}
   <div class="govuk-!-padding-bottom-3"></div>
 
   <h2 class="govuk-heading-m">Declaration</h2>
@@ -114,14 +52,13 @@
         <li>you will provide any missing information as soon as possible, to ensure that you’re meeting your regulatory requirements</li>
     </ul>
 
-    <div class="govuk-!-padding-bottom-2"></div>
   
     {% from "govuk/components/button/macro.njk" import govukButton %}
 
     <div class="govuk-button-group">
       {{ govukButton({
         text: "Confirm and submit",
-        href: "/ingestion-reprocessor/submitted.html"
+        href: "/ingestion-reprocessor/submitted-1.html"
       }) }}
     
       {{ govukButton({
