@@ -13,11 +13,11 @@
 
       <span class="govuk-caption-xl">South road: Plastic</span>
       <h1 class="govuk-heading-xl">Check before you submit</h1>
-      <p class="govuk-body">Your summary log has been uploaded and validated. <br><br> Before submitting, you need to confirm that you’re aware of the following. </p>
+      <p class="govuk-body">Your summary log has been validated and is ready to submit. <br><br> Before submitting, you need to confirm that you’re aware of the following. </p>
 
       <div class="govuk-!-padding-bottom-6"></div>
 
-      <h2 class="govuk-heading-l">Waste balance</h2>
+      <h2 class="govuk-heading-l">There are 9 new loads</h2>
 
         {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
 
@@ -27,55 +27,53 @@
           items: [
             {
               heading: {
-                text: "7 loads will be added to your waste balance"
+                text: "7 new loads will be added to your waste balance "
               },
               summary: {
-                text: "These are either new loads or existing loads that are now complete. These loads include all the
-                information required in section 1 of your summary log."
+                text: "These loads include all the information required in section 1 of your  summary log."
               },
               content: {
                 html:
-                '<ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
-                  <li>12345678911</li>
-                  <li>12345678912</li>
-                  <li>12345678913</li>
-                  <li>12345678914</li>
-                  <li>12345678915</li>
-                  <li>12345678916</li>
-                  <li>12345678917</li>
+                '
+                <p>These reference numbers are found in the ‘Row ID’ column of your summary log.</p>
+                <ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
+                  <li>1092</li>
+                  <li>1093</li>
+                  <li>1094</li>
+                  <li>1095</li>
+                  <li>1096</li>
+                  <li>1097</li>
+                  <li>1097</li>
                 </ul>'
               }
             },
             {
               heading: {
-                text: "2 load will not be added to your waste balance"
+                text: "2 new loads will not be added to your waste balance"
               },
               summary: {
-                text: "  These loads are missing information from section 1 of your summary log. They will not be added to your 
+                text: "These loads are missing information from section 1 of your summary log. They will not be added to your 
                 waste balance until you provide the missing information."
               },
               content: {
                 html:
-                '<ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
-                  <li>12345678911</li>
-                  <li>12345678912</li>
+                '
+                <p>These reference numbers are found in the ‘Row ID’ column of your summary log.</p>
+                <ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
+                  <li>1099</li>
+                  <li>1100</li>
+
                 </ul>'
               }
             }
           ]
         }) }}
 
-<h2 class="govuk-heading-l">Compliance</h2>
-<h3 class="govuk-heading-m">Your summary log may be missing information required by your regulator</h3>
-<p class="govuk-body">One or more loads in your summary log may be incomplete, meaning you might not be meeting your 
-  regulatory requirements. <br><br>
-  
-  All the information across sections 1, 2, 3 and 4 of your summary log is needed for each load, where applicable, to ensure you remain compliant.<br><br>
-  
-  You may not have all the required information yet. As soon as you’re able to provide it, you should 
-  submit an updated summary log.</p>
 
-  <div class="govuk-!-padding-bottom-6"></div>
+  
+
+
+  <div class="govuk-!-padding-bottom-3"></div>
 
   <h2 class="govuk-heading-m">Declaration</h2>
   <p class="govuk-body">By submitting this summary log you confirm that:</p>
