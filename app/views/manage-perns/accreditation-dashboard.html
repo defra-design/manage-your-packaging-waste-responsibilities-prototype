@@ -1,0 +1,152 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Check your answers template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-xl">South road</span>
+    <h1 class="govuk-heading-xl">Plastic</h1>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <p class="govuk-body-m"><strong>Registration:</strong> <strong class="govuk-tag govuk-tag--green">Active</strong></p>
+    <p class="govuk-body-m"><strong>Registration no:</strong> A27WX2357214308-GL</p>
+  </div>
+  <div class="govuk-grid-column-one-half">
+    <p class="govuk-body-m"><strong>Accreditation:</strong> <strong class="govuk-tag govuk-tag--green">Active</strong></p>
+    <p class="govuk-body-m"><strong>Accreditation no:</strong> ER992415095748M
+</p>
+  </div>
+</div>
+
+<div class="govuk-!-padding-bottom-6"></div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="dashboard-card-2">
+    
+        <div class="card-title-2">
+          <h2 class="govuk-heading-xl" style="color: #1D70B8;" >493.68 tonnes
+            <p class="govuk-body-m" style="color: #1D70B8";><strong>Available waste balance</strong></p>
+            </h2>
+        </div>
+    
+        <div class="task-list-2">
+          <p class="govuk-body">This is the balance available for creating new PERNs</p>
+        </div>
+    
+   </div>
+  </div>
+  
+ </div>
+
+<div class="govuk-!-padding-bottom-9"></div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l">Choose a task</h2>
+  </div>
+</div>
+
+
+<hr class="govuk-section-break govuk-section-break--visible">
+
+<div class="govuk-!-padding-bottom-7"></div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <div class="dashboard-card">
+    
+    
+      <div class="card-title">
+        <h2 class="govuk-heading-m">Waste records</h2>
+        <p class="govuk-body-s">Submit your summary log to record packaging waste or <br>adjust previously submitted information.</p>
+      </div>
+      
+      <div class="task-list">
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="#">Submit your summary log</a>
+        </li>
+        <li>
+          <a class="govuk-link govuk-link--no-visited-state" href="#">View summary log history</a>
+        </li>
+      </ul>
+      </div>
+      
+      </div>
+  </div>
+  <div class="govuk-grid-column-one-half">
+        <div class="dashboard-card">
+    
+        <div class="card-title">
+          <h2 class="govuk-heading-m">PERNs</h2>
+          <p class="govuk-body-s">Create and manage PERNs.</p>
+        </div>
+    
+        <div class="task-list">
+          <ul class="govuk-list">
+            <li><a class="govuk-link govuk-link--no-visited-state" href="#">Create new PERN</a></li>
+            <li><a class="govuk-link govuk-link--no-visited-state" href="/manage-perns/manage-perns.html">Manage PERNs</a></li>
+          </ul>
+        </div>
+    
+   </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <div class="dashboard-card">
+    
+    
+      <div class="card-title">
+        <h2 class="govuk-heading-m">Reports</h2>
+        <p class="govuk-body-s">Create and manage your reports.</p>
+      </div>
+      
+      <div class="task-list">
+      <ul class="govuk-list">
+        <li>
+          <p>Reporting will be available from February 2026. </p>
+        </li>
+      </ul>
+      </div>
+      
+      </div>
+  </div>
+  <div class="govuk-grid-column-one-half">
+        <div class="dashboard-card">
+    
+        <div class="card-title">
+          <h2 class="govuk-heading-m">Registration and accreditation</h2>
+          <p class="govuk-body-s">View and manage your applications.</p>
+        </div>
+    
+        <div class="task-list">
+          <ul class="govuk-list">
+            <p>Registration and accreditation management will be available from mid-2026.<br><br>
+
+              If you have any questions about your existing applications, <a href="#" class="govuk-link govuk-link--no-visited-state">contact your regulator</a>. </p>
+          </ul>
+        </div>
+    
+   </div>
+  </div>
+</div>
+
+{% endblock %}

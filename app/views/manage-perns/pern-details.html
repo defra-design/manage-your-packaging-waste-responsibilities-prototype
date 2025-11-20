@@ -1,0 +1,229 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Check your answers template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+
+      <span class="govuk-caption-xl">Manage PERNs</span>
+      <h1 class="govuk-heading-xl">
+        PERN details
+      </h1>
+      <p>Any information that is not shown here will be automatically populated when the PERN is authorised.</p>
+
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            PERN number
+          </dt>
+          <dd class="govuk-summary-list__value">
+  
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"><span class="govuk-visually-hidden"> name</span></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Status
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <strong class="govuk-tag govuk-tag--blue">
+              Awaiting authorisation
+            </strong>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"><span class="govuk-visually-hidden"></span></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Issued by
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Gaskells Waste Services
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Packaging waste producer or compliance scheme
+          </dt>
+          <dd class="govuk-summary-list__value">
+            MCG Developments
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">Change</a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Tonnage
+          </dt>
+          <dd class="govuk-summary-list__value">
+            5
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">Change</a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Tonnage in words
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Five
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Issuer comments
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Not provided
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#">Change</a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Issued date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Authorised by
+          </dt>
+          <dd class="govuk-summary-list__value">
+            
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Position
+          </dt>
+          <dd class="govuk-summary-list__value">
+            
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="#"></a>
+          </dd>
+        </div>
+      </dl>
+
+
+
+
+      <div class="govuk-!-padding-bottom-6"></div>
+
+      <h1 class="govuk-heading-l">
+        Accreditation details
+      </h1>
+
+    {{ govukSummaryList({
+      rows: [
+        {
+          key: {
+            text: "Material"
+          },
+          value: {
+            text: "Plastic"
+          },
+          actions: {
+            items: [
+              {
+                href: "#",
+                text: "",
+                visuallyHiddenText: "Question 1"
+              }
+            ]
+          }
+        }
+        ,
+        {
+          key: {
+            text: "Accreditation number"
+          },
+          value: {
+            text: "493021"
+          },
+          actions: {
+            items: [
+              {
+                href: "#",
+                text: "",
+                visuallyHiddenText: "Question 2"
+              }
+            ]
+          }
+        }
+        ,
+        {
+          key: {
+            text: "Accreditation address"
+          },
+          value: {
+            text: "South Road, 
+            Liverpool,
+            L22 3DH"
+          },
+          actions: {
+            items: [
+              {
+                href: "#",
+                text: "",
+                visuallyHiddenText: "Question 3"
+              }
+            ]
+          }
+        }
+      ]
+    }) }}
+
+
+
+
+      {% from "govuk/components/button/macro.njk" import govukButton %}
+
+      <div class="govuk-button-group">
+        {{ govukButton({
+          text: "Authorise and issue PERN",
+          href: "/manage-perns/confirmation.html"
+        }) }}
+      
+        {{ govukButton({
+          text: "Cancel PERN",
+          href: "#",
+          classes: "govuk-button--warning"
+        }) }}
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
