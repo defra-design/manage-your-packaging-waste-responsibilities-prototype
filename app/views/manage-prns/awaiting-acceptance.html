@@ -128,7 +128,7 @@
             Position
           </dt>
           <dd class="govuk-summary-list__value">
-            Cheif Waste Officer
+            Chief Waste Officer
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="#"></a>
@@ -205,4 +205,9 @@
       ]
     }) }}
     
+    {{ govukButton({
+      text: "Download PRN",
+      classes: "govuk-button--secondary",
+      href: "/manage-prns/awaiting-acceptance.html"
+    }) }}
 {% endblock %}

@@ -17,33 +17,12 @@
 
       <div class="govuk-!-padding-bottom-6"></div>
 
-      <h2 class="govuk-heading-l">2 new loads have been added</h2>
+      <h2 class="govuk-heading-l">No new loads have been added</h2>
 
-        {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-        {{ govukAccordion({
-          id: "accordion-with-summary-sections",
-          showSectionText: 'Show loads',
-          items: [
-            {
-              heading: {
-                text: "2 new loads will be added to your waste balance "
-              },
-              summary: {
-                text: "These loads include all the information required in section 1 of your  summary log."
-              },
-              content: {
-                html:
-                '<ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
-                  <li>1099</li>
-                  <li>1100</li>
-                </ul>'
-              }
-            }
-          ]
-        }) }}
 
-        <h2 class="govuk-heading-l">1 existing load has been adjusted</h2>
+        <h2 class="govuk-heading-l">3 existing load has been adjusted</h2>
 
 {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
 
@@ -53,15 +32,19 @@
   items: [
     {
       heading: {
-        text: "1 adjustment will be reflected in your waste balance "
+        text: "3 adjustment will be reflected in your waste balance "
       },
       summary: {
         text: "These loads include all the information required in section 1 of your  summary log."
       },
       content: {
         html:
-        '<ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
+        '
+        <p>These reference numbers are found in the ‘Row ID’ column of your summary log.</p>
+        <ul class="govuk-list govuk-list--bullet govuk-list--bullet-1">
           <li>1096</li>
+          <li>1099</li>
+          <li>1100</li>
         </ul>'
       }
     }
